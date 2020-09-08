@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { useHistory} from 'react-router-dom';
 import api from '../../services/api';
 import './style.css';
+import logo from '../../logo.png';
 export default function Cadastro(){
     const [name, setClient]= useState('');
     const [dataEntrega, setDate]= useState('');
@@ -25,7 +26,14 @@ export default function Cadastro(){
     }
     return (
         <div id="container">
-            
+            <div id="containerTop">
+                <div id="logo">
+                    <img src={ logo }/>
+                </div>
+                <div id="containerButton">
+                    <button className="button-list" type="button" onClick={handleLista}>Entregas</button>
+                </div>
+            </div>
             <aside>
                 <strong>Cadastrar</strong>
                 
@@ -69,9 +77,7 @@ export default function Cadastro(){
                     <button type="submit">Cadastrar</button>
                 </form>
             </aside>
-            <div id="containerButton">
-                <button className="button-list" type="button" onClick={handleLista}>Entregas</button>
-            </div>
+            
         </div>
     );
 }

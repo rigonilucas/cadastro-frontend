@@ -13,6 +13,7 @@ import api from '../../services/api';
 import {Provider} from 'react-redux';
 import store from '../../store/index';
 import Armazena from '../../components/Armazena/index';
+import logo from '../../logo.png';
 
 
 const StyledTableCell = withStyles((theme) => ({
@@ -58,10 +59,15 @@ export default function CustomizedTables() {
   
   return (
     <div id = "container">
-      <div id = "containerButton">
+      <div id = "containerTop">
+        <div id = "logo">
+          <img src={ logo }/>
+        </div>
+        <div id = "containerButton">
         <button className = "buttonCadastro" type = "button" onClick={toCadastro}>Voltar para Cadastro</button>
+        </div>
       </div>
-      <Provider store = { store }>
+      
       <TableContainer id = "containerTable" component = { Paper }>
         <Table aria-label = "customized table">
           <TableHead>
@@ -92,9 +98,7 @@ export default function CustomizedTables() {
           </TableBody>
         </Table>
       </TableContainer>
-      
-              
-      </Provider>
+       
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { GoogleMap, LoadScript, DirectionsService, DirectionsRenderer} from '@react-google-maps/api';
 import { useSelector } from 'react-redux';
-
+import logo from '../../logo.png';
 import './style.css';
 import { useHistory } from 'react-router-dom';
 
@@ -50,8 +50,15 @@ export default function Map() {
   }
 
   return (
-        <>
-          <button id="buttonBack"type="button" onClick={toEntrega} >Voltar</button>
+        <div id="container">
+          <div id="containerTop">
+            <div id = "logo">
+              <img src={ logo }/>
+            </div>
+            <div id="containerButton">
+              <button id="buttonBack"type="button" onClick={toEntrega} >Voltar</button>
+            </div>
+          </div>
           <LoadScript
              id="monitoring-map"
               googleMapsApiKey= {mapsKey}
@@ -60,7 +67,9 @@ export default function Map() {
               id='direction'
               mapContainerStyle={{
                 height: '60vh',
-                width: '100%'
+                width: '80%',
+                marginTop:'60px',
+                justifySelf:'center'
               }}
               options={mapsOptions}
               zoom={10}
@@ -86,6 +95,6 @@ export default function Map() {
             </GoogleMap>
           </LoadScript>
           
-        </>
+        </div>
     )
 }

@@ -3,14 +3,26 @@ body{
 }
 #container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 30px;
+    
+}
+#containerTop{
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+#logo{
+    justify-self: center;
 }
 #containerButton{
-    margin-right:60px;
+     justify-self: center;   
 }
 div button.buttonCadastro{
-    width:100%;
+    
     border:0;
     margin-right:0px;
     background:rgb(107, 197, 233);
@@ -26,8 +38,8 @@ div button.buttonCadastro{
     background:rgb(82, 178, 216);
   }
 #containerTable{
+    margin-top:70px;
     max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    margin-right: 190px;
+    justify-self: center;
+    
 }
