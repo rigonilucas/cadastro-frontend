@@ -1,0 +1,16 @@
+#buttonBack{
+    width:10%;
+    border:0;
+    margin-bottom:30px;
+    background:rgb(107, 197, 233);
+    border-radius: 2px;
+    padding:15px 20px;
+    font-size:16px;
+    font-weight:bold;
+    color:#fff;
+    cursor:pointer;
+    transition:background 0.5s;
+}
+#buttonBack:hover{
+    background:rgb(82, 178, 216);
+}

@@ -1,0 +1,75 @@
+body{
+    background:#e5e6f0;
+  }
+  #container{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  div #containerButton{
+      margin-left:190px;
+  }
+  div button.button-list{
+    width:100%;
+    border:0;
+    margin-right:90px;
+    background:rgb(107, 197, 233);
+    border-radius: 2px;
+    padding:15px 20px;
+    font-size:16px;
+    font-weight:bold;
+    color:#fff;
+    cursor:pointer;
+    transition:background 0.5s;
+  }
+  div button.button-list:hover{
+    background:rgb(82, 178, 216);
+  }
+  aside {
+    width:500px;
+    background:#fff;  
+    box-shadow: 0 0 14px 0 rgba(0,0,0,0.02);
+    border-radius: 2px;
+    padding: 30px 20px;
+    
+  }
+  aside strong {
+    font-size:20px;
+    text-align:center;
+    display:block;
+    color:dimgrey;
+  }
+  aside form {
+    margin-top:30px;
+  }
+  aside form #ContainerInput label {
+    color: #acacac;
+    font-size:14px;
+    font-weight:bold;
+    display:block;
+    margin-top: 10px;
+  }
+  aside form #ContainerInput input {
+    width:100%;
+    height:32px;
+    font-size:14px;
+    color:#666;
+    border:0;
+    border-bottom:1px solid rgb(107, 197, 233);
+  }
+  aside form button[type=submit]{
+    width:100%;
+    border:0;
+    margin-top:30px;
+    background:rgb(107, 197, 233);
+    border-radius: 2px;
+    padding:15px 20px;
+    font-size:16px;
+    font-weight:bold;
+    color:#fff;
+    cursor:pointer;
+    transition:background 0.5s;
+  }
+  aside form button[type=submit]:hover{
+    background:rgb(82, 178, 216);
+  }

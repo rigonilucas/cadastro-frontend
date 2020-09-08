@@ -1,0 +1,33 @@
+body{
+    background:#e5e6f0;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+#containerButton{
+    margin-right:60px;
+}
+div button.buttonCadastro{
+    width:100%;
+    border:0;
+    margin-right:0px;
+    background:rgb(107, 197, 233);
+    border-radius: 2px;
+    padding:15px 20px;
+    font-size:16px;
+    font-weight:bold;
+    color:#fff;
+    cursor:pointer;
+    transition:background 0.5s;
+  }
+  div button.buttonCadastro:hover{
+    background:rgb(82, 178, 216);
+  }
+#containerTable{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin-right: 190px;
+}
